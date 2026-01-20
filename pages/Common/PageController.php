@@ -3,6 +3,7 @@ namespace Custodesk\Page\Common;
 
 use Custodesk\Controller;
 use Custodesk\RequestMetadata;
+use Custodesk\TemplateUtilsDelegate;
 
 class PageController
 {
@@ -19,6 +20,7 @@ class PageController
         }
         
         Controller::$twig->addGlobal("data", $this->data);
+        Controller::$twig->addGlobal("custodesk", new TemplateUtilsDelegate());
         echo Controller::$twig->render($this->template . ".twig", []);
         exit();
     }

@@ -1,2 +1,9 @@
 RewriteEngine On
+
+# Allow static assets to go through:
+RewriteCond %{REQUEST_URI} ^/s/
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f
+RewriteRule ^ - [L]
+
+# Redirect everything else to index.php
 RewriteRule . index.php [L]
