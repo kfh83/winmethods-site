@@ -1,0 +1,16 @@
+@use "sass:map";
+@import "imgmap";
+
+@function resolve-image($image) {
+    @return url(map.get($_images, $image));
+}
+
+@mixin sprite($sheet, $sprite) {
+    $sheetMapping: map.get($_sheets, $sheet);
+    $spriteMapping: map.get(map.get($sheetMapping, "_sprites"), $sprite);
+
+    background: no-repeat url(map.get($sheetMapping, "_sheet"))
+        map.get($spriteMapping, "x") map.get($spriteMapping, "y");
+    width: map.get($spriteMapping, "w");
+    height: map.get($spriteMapping, "h")
+}

@@ -6,7 +6,10 @@ const ImgBuild = require("./img_build");
 function buildInternal()
 {
     let stream = gulp.src("../css/[^_]*.scss")
-                    .pipe(GulpSass.sync({ style: "compressed" }).on("error", GulpSass.logError))
+                    .pipe(GulpSass.sync({
+                        style: "compressed",
+                        silenceDeprecations: ["import"]
+                    }).on("error", GulpSass.logError))
                     .pipe(vfl.gulp("s/cssbin"))
                     .pipe(gulp.dest("../../s/cssbin/"));
     stream.on("end", vfl.writeMappings);
@@ -15,7 +18,11 @@ function buildInternal()
 
 function build()
 {
-    return gulp.series(ImgBuild, buildInternal)();
+    gulp.series(
+        ImgBuild.buildImages,
+        ImgBuild.buildSheets,
+        ImgBuild.writeImageSheetMap,
+        buildInternal)();
 }
 
 module.exports = build;

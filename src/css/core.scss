@@ -1,3 +1,9 @@
+@import "images";
+
 body {
     background: #fff;
+}
+
+#logo {
+    @include sprite("sprites", "logo");
 }

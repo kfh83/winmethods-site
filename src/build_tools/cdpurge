@@ -1,4 +1,9 @@
 #!/usr/bin/env node
-const fs = require("fs");
+const fs      = require("fs");
+const process = require("process");
+
+process.chdir(__dirname);
+
 fs.rmSync("../../s", { recursive: true, force: true });
 fs.rmSync("../../vfl.json", { force: true });
+fs.rmSync("../css/_imgmap.scss", { force: true });
