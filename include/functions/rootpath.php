@@ -1,5 +1,5 @@
 <?php
-namespace Custodesk;
+namespace CustoDesk;
 
 /* Returns a path relative to the server root. */
 function rootpath(string $path): string

@@ -1,8 +1,8 @@
 <?php
-namespace Custodesk\Page\Home;
+namespace CustoDesk\Page\Home;
 
-use Custodesk\Page\Common\PageController;
-use Custodesk\RequestMetadata;
+use CustoDesk\Page\Common\PageController;
+use CustoDesk\RequestMetadata;
 
 class HomeController extends PageController
 {

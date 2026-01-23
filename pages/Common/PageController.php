@@ -1,9 +1,9 @@
 <?php
-namespace Custodesk\Page\Common;
+namespace CustoDesk\Page\Common;
 
-use Custodesk\Controller;
-use Custodesk\RequestMetadata;
-use Custodesk\TemplateUtilsDelegate;
+use CustoDesk\Controller;
+use CustoDesk\RequestMetadata;
+use CustoDesk\TemplateUtilsDelegate;
 
 class PageController
 {

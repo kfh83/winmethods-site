@@ -1,9 +1,9 @@
 <?php
-namespace Custodesk;
+namespace CustoDesk;
 
-use Custodesk\Util\GlobToRegexp;
-use Custodesk\RequestMetadata;
-use function Custodesk\rootpath;
+use CustoDesk\Util\GlobToRegexp;
+use CustoDesk\RequestMetadata;
+use function CustoDesk\rootpath;
 
 class Controller
 {

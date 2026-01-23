@@ -1,7 +1,7 @@
 <?php
-namespace Custodesk;
+namespace CustoDesk;
 
-use function Custodesk\rootpath;
+use function CustoDesk\rootpath;
 
 class VFL
 {

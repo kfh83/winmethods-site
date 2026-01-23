@@ -1,5 +1,5 @@
 <?php
-namespace Custodesk;
+namespace CustoDesk;
 
 class TemplateUtilsDelegate
 {

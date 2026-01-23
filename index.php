@@ -1,10 +1,10 @@
 <?php
-namespace Custodesk\Page;
+namespace CustoDesk\Page;
 
 require "vendor/autoload.php";
 require "include/autoload.php";
 
-use Custodesk\Controller;
+use CustoDesk\Controller;
 
 Controller::route([
     "get" => [

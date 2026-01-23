@@ -1,7 +1,7 @@
 <?php
-namespace Custodesk;
+namespace CustoDesk;
 
-use Custodesk\DataArray;
+use CustoDesk\DataArray;
 
 /**
  * Return accessible information from a request.

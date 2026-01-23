@@ -7,7 +7,7 @@ const vfl                  = require("./vfl");
 process.chdir(__dirname);
 
 console.log("cdbuild");
-console.log("Build tool for Custodesk assets");
+console.log("Build tool for CustoDesk assets");
 console.log();
 
 const PARTS = {

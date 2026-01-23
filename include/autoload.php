@@ -1,5 +1,5 @@
 <?php
-namespace Custodesk;
+namespace CustoDesk;
 
 use Exception;
 
@@ -24,8 +24,8 @@ class Autoloader
 
         $f = "";
         if (
-            self::mapPrefix($PATH, "Custodesk/Page/", "pages/", $f) ||
-            self::mapPrefix($PATH, "Custodesk/", "modules/", $f)
+            self::mapPrefix($PATH, "CustoDesk/Page/", "pages/", $f) ||
+            self::mapPrefix($PATH, "CustoDesk/", "modules/", $f)
         )
         {
             self::tryImportClass($f, $class);

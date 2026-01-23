@@ -1,5 +1,5 @@
 <?php
-namespace Custodesk\Util;
+namespace CustoDesk\Util;
 
 /**
  * Convert a glob to a regexp.

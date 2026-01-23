@@ -1,5 +1,5 @@
-# Custodesk
-Repository for Custodesk.
+# CustoDesk
+Repository for CustoDesk.
 
 # Setup
 

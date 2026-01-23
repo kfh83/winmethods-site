@@ -1,5 +1,5 @@
 <?php
-namespace Custodesk;
+namespace CustoDesk;
 
 use ArrayAccess, ArrayIterator, IteratorAggregate;
 use ReturnTypeWillChange; // PHP 8.1+
