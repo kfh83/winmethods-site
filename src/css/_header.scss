@@ -7,8 +7,6 @@
 }
 
 #headerLogo {
-	width: 235px;
-	height: 127px;
 	@include sprite("sprites", "logo");
 }
 
