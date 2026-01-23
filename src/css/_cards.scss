@@ -1,0 +1,39 @@
+@import "images";
+
+#cardArea{
+	table-layout: fixed;
+}
+
+/* customize.org had the tri-td thing and each td had divs with class "leftelement" and "rightelement" and
+they applied a 6px margin to the right/left sides respectfully, i'll replicate that */
+
+.leftElement{
+	margin-right: 10px;
+} 
+
+/* aight apprently we not going with 3 cols but thisll stay here for keepsake */
+
+
+.rightElement{
+	margin-left: 10px;
+}
+
+.cardBase{
+	background: white;
+	border: 1px #404040 solid;
+	padding: 1px;
+	display: flex;
+	flex-direction: column;
+	a {
+		color: #404040;
+        text-decoration: none;
+	}
+}
+
+#cardHeader{
+	background: black;
+	font-weight: bold;
+	color: white;
+	height: 14px;
+	padding: 2px;
+}
