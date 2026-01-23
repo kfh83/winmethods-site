@@ -1,0 +1,33 @@
+@import "images";
+
+#headerArea {
+	display: flex;
+	align-items:center;
+	color: #fff;
+}
+
+#headerLogo {
+	width: 235px;
+	height: 127px;
+	@include sprite("sprites", "logo");
+}
+
+#linksBar {
+	height:32px;
+	background: #000;
+	display: flex;
+	align-items: center;
+	flex: 1;
+
+    a {
+        color: #fff;
+        font-weight: bold;
+        padding: 5px;
+        text-decoration: none;
+    }
+}
+
+#accountActions {
+	margin-left: auto;
+	margin-right: 5px;
+}

@@ -2,12 +2,14 @@
 
 body {
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	font-size: 9pt;
-	width:800px;
+	font-size: 12px;
+	width: 800px;
 	margin: auto;
 	margin-top: 20px;
-    background-color: #EFEFEF;
+    background-color: #efefef;
     background-image: resolve-image("lines-top"), resolve-image("lines");
     background-repeat: repeat-x, repeat;
     background-position: top, top;
 }
+
+@import "header";
