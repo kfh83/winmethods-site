@@ -41,4 +41,14 @@ class VFL
 
         return "/" . $this->map->{$path};
     }
+
+    public function resolveCSS(string $name): ?string
+    {
+        return $this->resolve("s/cssbin/{$name}.css");
+    }
+
+    public function resolveJS(string $name): ?string
+    {
+        return $this->resolve("s/jsbin/{$name}.js");
+    }
 }
