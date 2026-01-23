@@ -85,6 +85,15 @@ a {
 	color: #fff;
 	height: 14px;
 	padding: 2px;
+	position: relative;
+
+	&::after {
+		content: "";
+		@include sprite("sprites", "card_decoration");
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
 }
 
 .cardContent {
