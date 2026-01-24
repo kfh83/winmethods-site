@@ -10,6 +10,7 @@ Controller::route([
     "get" => [
         "/" => Home\HomeController::class,
         "/index.php" => Home\HomeController::class,
+        "/about" => About\AboutController::class,
         "default" => Common\PageController::class,
     ]
 ]);
