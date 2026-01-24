@@ -1,0 +1,22 @@
+{% extends "core.twig" %}
+{% from "common/macros.twig" import card_begin %}
+{% from "common/macros.twig" import card_end %}
+
+{% block content %}
+
+{{ card_begin("Log into CustoDesk") }}
+<div id="loginPage">
+	<div class="fieldwithLabel">
+		<div style="width: 70px;">Username:</div>
+		<input class="inputField" type="text" name="username" required>
+	</div>
+
+	<div class="fieldwithLabel">
+		<div style="width: 70px;">Password:</div>
+		<input class="inputField" type="password" name="password" required>
+	</div>
+
+	<input type="submit" value="Login" name="login" class="formButton">
+</div>
+{{ card_end() }}
+{% endblock %}

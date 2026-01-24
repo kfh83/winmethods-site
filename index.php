@@ -11,6 +11,7 @@ Controller::route([
         "/" => Home\HomeController::class,
         "/index.php" => Home\HomeController::class,
         "/about" => About\AboutController::class,
+        "/login" => Login\LoginController::class,
         "default" => Common\PageController::class,
     ]
 ]);
