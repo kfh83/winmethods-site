@@ -25,7 +25,8 @@ class Controller
     {
         self::$twigLoader = new \Twig\Loader\FilesystemLoader("templates");
         self::$twig = new \Twig\Environment(self::$twigLoader, [
-            rootpath("cache/templates")
+            "cache" => rootpath("cache/templates"),
+            "auto_reload" => true,
         ]);
     }
 
