@@ -1,8 +1,6 @@
 @import "images";
 
 body {
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	font-size: 12px;
 	width: 800px;
 	margin: auto;
 	margin-top: 20px;
@@ -10,6 +8,11 @@ body {
     background-image: resolve-image("lines-top"), resolve-image("lines");
     background-repeat: repeat-x, repeat;
     background-position: top, top;
+}
+
+body, input, textarea {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 12px;
 }
 
 a {
